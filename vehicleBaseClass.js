@@ -33,6 +33,28 @@ slowDown();{
     if(this.speed > 0){
         console.log(this.speed -= 1)
         this.fuel = this.fuel - 1
-    } //i am up to here will finish tommorow//
+    }   else{
+        this + 'has stoped moving'
+    }
+    }
+}
+stop();{
+    this.started = false
+}
+drive();{
+    accelerate()
+}
+brake();{
+    slowDown()
+}
+typeOfVehicle(wheels);{
+    if(this.numberOfWeels == 8 && wheels == 8){
+        console.log(this.model + '' + this.make + 'is a truck')
+    }   else if(this.model == 4 && wheels == 4){
+        console.log(this.model + '' + this.make + 'is an car')
+    }   else if(this.numberOfWeels == 2 && wheels == 2){
+        console.log(this.model + "" + this.make + 'is a bike')
+    }   else{
+        console.log('unknown type of vehicle')
     }
 }
